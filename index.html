@@ -15,52 +15,68 @@
     <body>
 
         <div class="container">
-            <div class="row">
-                <div class="col s12 m12 l12">
-                    <header><h1>PASSWORD GENERATOR</h1></header>
-                </div>
+
+            <div class="row s12 m12 l12">
+                <header><h1>PASSWORD GENERATOR</h1></header>
             </div>
-            <div class="row">
-                <div class="col s12 m12 l12 ">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                        <h5 class="card-title">INSTRUCTIONS</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col s6 m6 l6">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">ALLOWABLE CHARACTERS</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s6 m6 l6">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">PASSWORD LENGTH</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
             <div class="row">
                 <div class="col s12 m12 l12">
                     <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
+                        <h5 class="card-title">Instrctions</h5>
                         <div class="card-body">
-                            <h5 class="card-title">GENERATE PASSWORD</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text">Do you need a secure password?? Use the generator below to create one!!</p>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col s12 m6 l6">
+                    <div class="card">
+                        <h5 class="card-title">Pick At Least 1 Character Type</h5>
+                        <div class="card-body">
+                            <form class="row characters">
+                                <div class="col">
+                                    <input type="checkbox" id="accept" checked> Lower Case 
+                                    <input type="checkbox" id="accept" checked> Upper Case
+                                </div>
+                                <div class="col">
+                                    <input type="checkbox" id="accept" checked> Special Characters
+                                    <input type="checkbox" id="accept" checked> Numbers
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l6">                   
+                    <div class="card">
+                        <div class="card-heading">
+                            <h5 class="card-title">Length of Password</h5>
+                            <h6>Choose between 8 - 128 character length</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="slideContainer">
+                                <input type="range" min="8" max="128" value="15" id="slider" class="slider">
+                                <output class="display-length">15</output>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <div class="card">
+                        <h5 class="card-title">Generate Password</h5>
+                        <div class="card-body gen-button row-col-12">
+                            <input type="text" id="display" class="row"></input>
+                            <button type="button"id="gbtn" class="btn row btn-primary">GENERATE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
         
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
