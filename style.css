@@ -36,20 +36,25 @@ button.btn-primary {
     margin-top: 10px;
 }
 
-input.slider {
+/*The slider itself*/
+input.slider {;
     -webkit-appearance: none;
-    width: 100%;
+    appearance: none;
+    width: 100%; /*fit the width of its container*/
     height: 20px;
-    background: url(./images/feather_background.jpg);
+    background: url(./images/feather_background.jpg); /*Match background with body*/
+    outline: none;
     opacity: 0.7;
     -webkit-transition: .2s;
     transition: opacity .2s;
 }
 
+/*The effect when you hover over the slider*/
 input.slider:hover {
     opacity: 1;
 }
 
+/*Slider handle*/
 input.slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
