@@ -19,6 +19,12 @@ h5.card-title, h6 {
     padding: 0%;
 }
 
+p.card-text {
+    text-align: center;
+    font-weight: 500;
+    font-size: larger;
+}
+
 div.card {
     margin: 15px;
     padding: 10px;
