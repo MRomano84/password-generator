@@ -3,7 +3,7 @@ let upperChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let lowerChar = "abcdefghijklmnopqrstuvwxyz";
 let numChar = "1234567890";
 let symChar = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
-let allChar = ["upperChar", "lowerChar", "numChar", "symChar"];
+let allChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
 
 let lowerBox = document.getElementById("lowerCase");
 let upperBox = document.getElementById("upperCase");
@@ -12,7 +12,24 @@ let numbBox = document.getElementById("numbers");
 let chosenLength = document.getElementById("slider");
 let newPassword = document.getElementById("generate");
 
-console.log(password(chosenLength, allChar));
+console.log(password(chosenLength.value, allChar));
+
+
+
+generate.addEventListener('click', function(e) {
+
+    let thePassword = newPassword
+    (upperBox.checked) ? randomPassword += upperChar : "";
+    (numbBox.checked) ? randomPassword += numChar : "";
+    (symBox.checked) ? randomPassword += symChar : "";
+    (lowerBox.checked) ? randomPassword += lowerChar : "";
+
+});
+
+
+
+
+
 
 function password(l, characters) {
     let pword = "";
@@ -22,31 +39,4 @@ function password(l, characters) {
     }
 
     return pword;
-}
-
-lowerBox.addEventListener('change', function()){
-    if (this.checked) {
-        lowerChar += pword;
-    else {}
-    }
-}
-
-upperBox.addEventListener('change', function()){
-    if (this.checked) {
-        upperChar += pword;
-    else {}
-    }
-}
-
-numbBox.addEventListener('change', function()){
-    if (this.checked) {
-        numChar += pword;
-    else {}
-    }
-}
-
-symBox.addEventListener('change', function()){
-    if (this.checked) {
-        symChar += pword;
-    }
 }
