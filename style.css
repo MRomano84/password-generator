@@ -37,7 +37,7 @@ button.btn-primary {
 }
 
 /*The slider itself*/
-input.slider {;
+input.slider {
     -webkit-appearance: none;
     appearance: none;
     width: 100%; /*fit the width of its container*/
