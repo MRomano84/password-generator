@@ -70,7 +70,7 @@ input.slider::-webkit-slider-thumb {
     cursor: pointer;
 }
 
-output.display-length {
-    text-align: right;
+div.slideContainer {
+    text-align: center;
     font-weight: 500;
 }
