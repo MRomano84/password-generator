@@ -25,6 +25,10 @@ p.card-text {
     font-size: larger;
 }
 
+input.display {
+    width: 100%;
+}
+
 div.card {
     margin: 15px;
     padding: 10px;
