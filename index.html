@@ -33,6 +33,20 @@
             </div>
 
             <div class="row">
+                <div class="col s12 m6 l6">                   
+                    <div class="card">
+                        <div class="card-heading">
+                            <h5 class="card-title">Length of Password</h5>
+                            <h6>Choose between 8 - 128 character length</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="slideContainer">
+                                <input type="range" min="8" max="128" value="15" id="slider" class="slider" oninput="this.nextElementSibling.value = this.value">
+                                <output class="display-length">15</output>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col s12 m6 l6">
                     <div class="card">
                         <h5 class="card-title">Pick At Least 1 Character Type</h5>
@@ -49,20 +63,6 @@
                                     <input type="checkbox" id="numbers" checked> Numbers
                                 </div>
                             </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6 l6">                   
-                    <div class="card">
-                        <div class="card-heading">
-                            <h5 class="card-title">Length of Password</h5>
-                            <h6>Choose between 8 - 128 character length</h6>
-                        </div>
-                        <div class="card-body">
-                            <div class="slideContainer">
-                                <input type="range" min="8" max="128" value="15" id="slider" class="slider" oninput="this.nextElementSibling.value = this.value">
-                                <output class="display-length">15</output>
-                            </div>
                         </div>
                     </div>
                 </div>
