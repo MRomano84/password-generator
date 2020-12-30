@@ -69,3 +69,8 @@ input.slider::-webkit-slider-thumb {
     background: chartreuse;
     cursor: pointer;
 }
+
+output.display-length {
+    text-align: right;
+    font-weight: 500;
+}
