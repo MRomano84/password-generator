@@ -41,8 +41,8 @@
                         </div>
                         <div class="card-body">
                             <div class="slideContainer">
-                                <input type="range" min="8" max="128" value="15" id="slider" class="slider" oninput="this.nextElementSibling.value = this.value">
-                                <output class="display-length">15</output>
+                                <input type="range" min="8" max="128" value="35" id="slider" class="slider" oninput="this.nextElementSibling.value = this.value">
+                                <output class="display-length">35</output>
                             </div>
                         </div>
                     </div>
@@ -55,10 +55,10 @@
                                 <div class="col">
                                     <input type="checkbox" name="checkbox" id="lowerCase" checked> Lower Case 
                                     <br />
-                                    <input type="checkbox" name="checkbox" id="upperCase" unchecked> Upper Case
+                                    <input type="checkbox" name="checkbox" id="upperCase" checked> Upper Case
                                 </div>
                                 <div class="col">
-                                    <input type="checkbox" name="checkbox" id="symbol" unchecked> Special Characters
+                                    <input type="checkbox" name="checkbox" id="symbol" checked> Special Characters
                                     <br />
                                     <input type="checkbox" name="checkbox" id="number" checked> Numbers
                                 </div>
@@ -68,12 +68,12 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row pwDisplay">
                 <div class="col s12 m12 l12">
                     <div class="card">
                         <h5 class="card-title">Generate Password</h5>
                         <div class="card-body gen-button row-col-12">
-                            <input type="text" id="display" class="display"><span id="yourPassword"></span></input>
+                            <span type="text" id="display" class="display row"></span>
                             <button type="button"id="generate" onclick="" class="btn row btn-primary">GENERATE</button>
                         </div>
                     </div>
