@@ -28,6 +28,7 @@ p.card-text {
 span.display {
     width: 100%;
     justify-content: center;
+    display: block;
 }
 
 div.card {
