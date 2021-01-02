@@ -51,3 +51,31 @@ div.slideContainer {
     text-align: center;
     font-weight: 500;
 }
+
+/*The slider itself*/
+input.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%; /*fit the width of its container*/
+    height: 10px;
+    background: url(./images/feather_background.jpg); /*Match background with body*/
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .1s;
+    transition: opacity .1s;
+}
+
+/*The effect when you hover over the slider*/
+input.slider:hover {
+    opacity: 1;
+}
+
+/*Slider handle*/
+input.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 24px;
+    background: url(./images/lock.png);
+    cursor: pointer;
+}
