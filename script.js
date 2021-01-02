@@ -45,17 +45,18 @@ function generatePassword() {
 
 //Adding checked checkbox characters to array of potential password characters
 function generateX() {
-    const xp = [];
-    upperBox.checked && xp.push(getUppercase());
-    lowerBox.checked && xp.push(getLowercase());
-    numbBox.checked && xp.push(getNumber());
-    symBox.checked && xp.push(getSymbol());
+    const char = [];
+    upperBox.checked && char.push(getUppercase());
+    lowerBox.checked && char.push(getLowercase());
+    numbBox.checked && char.push(getNumber());
+    symBox.checked && char.push(getSymbol());
 
-    if (xp.length == 0) {
-        return alert("Please Select at Least 1 Character Type.");
+    if (char.length == 0) {
+        return alert("Please Select at Least 1 Character Type.")[0];
+    } else {
+      return char[Math.floor(Math.random() * char.length)];
     }
 
-  return xp[Math.floor(Math.random() * xp.length)];
 
 }
 
