@@ -1,5 +1,4 @@
 //DOM elements
-const yourPassword = document.getElementById("display");
 const chosenLength = document.getElementById("slider");
 const upperBox = document.getElementById("upperCase");
 const lowerBox = document.getElementById("lowerCase");
