@@ -1,14 +1,51 @@
-# Password-generator
+# Password-Generator
+
 ## Description
+This password generator uses Javascript to allow a user to choose between 4 character types and a password length between 8 - 128 characers. At least one selection of numbers, special characters, and/or lower & upper case letters is required.
 
-This README is for the week 3 homework assignment through UNH's Coding Bootcamp. For the assignment, I am to create a password generator using Javascript that allows the user to choose between 4 character types (lower & upper case letters, numbers, and special characters) and give the option for a password length between 8 - 128 characters. 
+----------------------------------
 
-## Process
-I included an alert (modal) that pops up if the user unchecks all of the character types. It is defaulted to use all 4 character types and password length of 35 characters. The generator runs on a website so no installation is necessary.
+## Table of Contents
 
-### LINKS
+* [Technologies Used](#Technologies-Used)
+* [Installation](#installation)
+* [License](#license)
+* [Preview](#Preview)
+* [Deployed Application](#Deployed-Application)
+* [Questions](#questions)
 
-Password Generator is located at: https://MRomano84.github.io/password-generator
+----------------------------------
 
-Repo can be found at: https://github.com/MRomano84/password-generator
+## Technologies Used
+HTML, CSS, JavaScript, Bootstrap
 
+------------------------
+
+## Installation
+This application runs in the browser; no installation is required.
+
+----------------------------------------
+
+## License
+NOTICE: This application is covered by
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+-----------------------------------
+
+## Preview
+![Screenshot](https://github.com/MRomano84/password-generator/blob/main/images/Capture1.PNG)
+
+-----------------------------
+
+![Screenshot2](https://github.com/MRomano84/password-generator/blob/main/images/Capture2.PNG)
+
+
+## Deployed Application
+[Deployed link to Password-Generator](https://MRomano84.github.io/password-generator).
+
+------------------------------------
+
+## Questions
+If you have any comments or questions, I can be reached at [mathiasrok@gmail.com](mathiasrok@gmail.com)
+
+Or find me on [GitHub](MRomano84)
